@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../assets/logo.webp";
-import { useEffect, useState } from "react";
+import {useState } from "react";
 
 export const Header = () => {
   const [hidden, setHidden] = useState(true);
@@ -53,16 +53,16 @@ export const Header = () => {
             </div>
             <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>
-                <NavLink to="/" className={({isActive}) => isActive ? activeClass : inactiveClass}>Home</NavLink>
+                <NavLink to="/" className={({isActive}) => isActive ? activeClass : inactiveClass}>Accueil</NavLink>
               </li>
               <li>
-                <NavLink to="/movies/popular" className={({isActive}) => isActive ? activeClass : inactiveClass}>Popular</NavLink>
+                <NavLink to="/movies/popular" className={({isActive}) => isActive ? activeClass : inactiveClass}>Populaire</NavLink>
               </li>
               <li>
-                <NavLink to="/movies/topRated" className={({isActive}) => isActive ? activeClass : inactiveClass}>Top Rated</NavLink>
+                <NavLink to="/movies/topRated" className={({isActive}) => isActive ? activeClass : inactiveClass}>Les mieux notés</NavLink>
               </li>
               <li>
-                <NavLink to="/movies/upcoming" className={({isActive}) => isActive ? activeClass : inactiveClass}>Upcoming</NavLink>
+                <NavLink to="/movies/upcoming" className={({isActive}) => isActive ? activeClass : inactiveClass}>&Agrave; venir</NavLink>
               </li>
             </ul>
           </div>

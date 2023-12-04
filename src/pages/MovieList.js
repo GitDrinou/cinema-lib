@@ -1,19 +1,17 @@
-
-import { useEffect, useState } from "react"
+import { useFetch } from "../hooks/useFetch";
 import { Card } from "../components/Card"
 
-export const MovieList = () => {
-  const [movies, setMovies] = useState([]);
-
-  useEffect(()=> {
-
-  }, []);
-
+export const MovieList = ({apiPath}) => {
+  console.log(apiPath)
+  const movies = useFetch(apiPath);
+  
   return (
     <main>
       <section className="max-w-7xl mx-auto py-7">
-        <div className="fmex justify-starrt flex-wrap">
-          <Card />
+        <div className="flex justify-start flex-wrap">
+          { movies.map((movie) => (
+            <Card key={movie.id} movie = {movie} />
+          ))}
         </div>
       </section>
     </main>
