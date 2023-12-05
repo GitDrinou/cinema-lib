@@ -2,7 +2,14 @@
 module.exports = {
     content: ["./src/**/*.{html,js}"],
     theme: {
-      extend: {},
+      extend: {
+        screens: {
+          "other": {'min': '340px', 'max': '1200px'},
+        },
+        colors: {
+          "dark-bg": '#1E293B',
+        }
+      },
     },
     plugins: [],
 }
