@@ -2,7 +2,6 @@ import { useFetch } from "../hooks/useFetch";
 import { Card } from "../components/Card"
 
 export const MovieList = ({apiPath}) => {
-  console.log(apiPath)
   const movies = useFetch(apiPath);
   
   return (

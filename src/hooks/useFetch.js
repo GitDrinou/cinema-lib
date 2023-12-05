@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 
-export const useFetch = (apiPath) => {
+export const useFetch = (apiPath, queryString = "") => {
     const [data, setData] = useState([]);
-    const baseUrl = `https://api.themoviedb.org/3${apiPath}?language=fr-FR`;
+    const baseUrl = `https://api.themoviedb.org/3${apiPath}?language=fr-FR&query=${queryString}`;
     
 
     useEffect(()=> {
