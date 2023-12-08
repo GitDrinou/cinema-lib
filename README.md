@@ -1,6 +1,6 @@
 # Bibliothèque cinématographique
 
-Application React.js utilisant :
+Application React.js en utilisant :
 - React Router
 - Connexion à une API
 - TailwindCSS
