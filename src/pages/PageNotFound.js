@@ -1,7 +1,9 @@
 import PageNoteFoundImage from "../assets/images/pagenotfound.webp";
 import { Link } from "react-router-dom";
+import { useTitle } from "../hooks/useTitle";
 
-export const PageNotFound = () => {
+export const PageNotFound = ({title}) => {
+  useTitle(title)
   return (
     <main>
       <section className="flex flex-col justify-center px-2">

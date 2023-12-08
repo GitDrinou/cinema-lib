@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 export const Footer = () => {
   return (
-    <footer className="bg-white shadow m-4 dark:bg-gray-800">
+    <footer className="bg-white m-4 py-4 dark:bg-gray-800">
         <div className="p-4 sm:flex sm:justify-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2030 <Link to="/" className="hover:underline">CineLib™</Link>. All Rights Reserved</span>
           <div className="flex mt-4 sm:justify-center sm:mt-0">
