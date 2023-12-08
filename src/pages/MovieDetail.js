@@ -10,15 +10,8 @@ export const MovieDetail = () => {
   useTitle(movie.title);
   
   useEffect(() => {
-    const optionsAuthent = {
-      method: 'GET',
-      headers: {
-        accept: 'application/json',
-        Authorization: process.env.REACT_APP_API_TOKEN,
-      }
-  }
     async function fetchMovie() {
-      const response = await fetch(`https://api.themoviedb.org/3/movie/${params.id}?language=fr-FR`,optionsAuthent)
+      const response = await fetch(`https://api.themoviedb.org/3/movie/${params.id}?api_key=${process.env.REACT_APP_API_KEY}&language=fr-FR`)
       const data = await response.json();
       setMovie(data);
     }
