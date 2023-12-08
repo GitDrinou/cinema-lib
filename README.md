@@ -7,5 +7,5 @@ Application React.js en utilisant :
 
 ## ... et ça donne quoi ?
 
-Rendez-vous ici -> [Simplonline](https://gitdrinou-cinelib.netlify.app/) !
+Rendez-vous ici -> [Cinelib](https://gitdrinou-cinelib.netlify.app/) !
 
